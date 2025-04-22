@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kinder Joy Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('hhyy.avif') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Bangers', cursive;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-box {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      width: 350px;
+      text-align: center;
+      animation: slideDown 1s ease;
+    }
+
+    .login-box h1 {
+      color: #d9471e;
+      margin-bottom: 30px;
+      font-size: 40px;
+      text-shadow: 1px 1px #f2a900;
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 15px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      outline: none;
+      background: #f2f2f2;
+      transition: 0.3s ease;
+    }
+
+    .login-box input:focus {
+      background-color: #fff2e6;
+      box-shadow: 0 0 10px #d9471e;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 15px;
+      background: #d9471e;
+      border: none;
+      color: white;
+      font-size: 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .login-box button:hover {
+      background: #ff6a3d;
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    .logo {
+      font-size: 50px;
+      color: #211e5d;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-box">
+    <div class="logo"> KINDER JOY</div>
+    <h1>Login to Explore</h1>
+    <form onsubmit="return loginUser()">
+      <input type="text" id="username" placeholder="Enter Username" required>
+      <input type="password" id="password" placeholder="Enter Password" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <script>
+    function loginUser() {
+      window.location.href = "webpage kinderjoy.html";
+      return false;   }
+  </script>
+
+</body>
+</html>
